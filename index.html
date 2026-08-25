@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>نافذة غرفة حالة التعليم والتدريب</title>
+  <meta name="description" content="نافذة غرفة حالة التعليم والتدريب بإدارة التعليم بمحافظة الأحساء">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="الرئيسية">
+      <span class="brand-mark">ن</span>
+      <span><b>نافذة غرفة حالة</b><small>التعليم والتدريب</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav id="mainNav">
+      <a href="#home">الرئيسية</a>
+      <a href="#indicators">المؤشرات</a>
+      <a href="#reports">التقارير</a>
+      <a href="#library">المكتبة الرقمية</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">إدارة التعليم بمحافظة الأحساء</span>
+        <h1>من البيانات إلى الرؤية<br><em>ومن الرؤية إلى القرار</em></h1>
+        <p>منصة معرفية تفاعلية لعرض المؤشرات والنتائج والتقارير والأدلة الداعمة للقرارات التطويرية.</p>
+        <div class="actions">
+          <a class="btn primary" href="#indicators">استكشف المؤشرات</a>
+          <a class="btn secondary" href="#reports">استعرض التقارير</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="pulse"><span></span> حالة المنصة</div>
+        <strong>لوحة الإنجاز</strong>
+        <div class="big-number">86%</div>
+        <div class="progress"><i style="width:86%"></i></div>
+        <div class="mini-grid">
+          <div><b>24</b><small>مؤشر</small></div>
+          <div><b>12</b><small>تقرير</small></div>
+          <div><b>08</b><small>مجالات</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" id="indicators">
+    <div class="section-title">
+      <div><span class="eyebrow dark">لوحة المتابعة</span><h2>المؤشرات التعليمية</h2></div>
+      <input id="searchInput" class="search" placeholder="ابحث عن مؤشر..." aria-label="البحث عن مؤشر">
+    </div>
+    <div class="cards" id="indicatorCards">
+      <button class="card" data-search="نتائج نافس الأداء التحصيل"><span class="icon">◈</span><b>نتائج نافس</b><small>تحليل الأداء والفجوات التعليمية</small><strong>78%</strong></button>
+      <button class="card" data-search="التحصيل الدراسي نتائج الطلاب"><span class="icon">▦</span><b>التحصيل الدراسي</b><small>متابعة مستويات التحصيل والإنجاز</small><strong>84%</strong></button>
+      <button class="card" data-search="جودة التعليم المدرسة"><span class="icon">◇</span><b>جودة التعليم</b><small>مؤشرات الجودة والتحسين المستمر</small><strong>91%</strong></button>
+      <button class="card" data-search="التدريب التطوير المهني"><span class="icon">✦</span><b>التدريب والتطوير</b><small>مؤشرات التطوير المهني والأثر</small><strong>82%</strong></button>
+    </div>
+    <p id="emptyState" class="empty" hidden>لا توجد نتائج مطابقة.</p>
+  </section>
+
+  <section class="section alt" id="reports">
+    <div class="container">
+      <div class="section-title"><div><span class="eyebrow dark">معرفة قابلة للاستخدام</span><h2>التقارير والتحليلات</h2></div></div>
+      <div class="report-grid">
+        <article class="report"><span>01</span><h3>تحليل نتائج نافس</h3><p>قراءة مختصرة للنتائج ونقاط القوة والفجوات وفرص التحسين.</p><button class="outline" data-msg="سيتم ربط هذا الزر بملف التقرير عند رفعه.">عرض التقرير</button></article>
+        <article class="report"><span>02</span><h3>لوحة الإنجاز</h3><p>متابعة الإنجاز بصورة رقمية واضحة تساعد على سرعة القراءة.</p><button class="outline" data-msg="لوحة الإنجاز جاهزة للربط بالبيانات الفعلية.">فتح اللوحة</button></article>
+        <article class="report"><span>03</span><h3>التقارير الدورية</h3><p>مساحة مخصصة للتقارير والنشرات التحليلية المعتمدة.</p><button class="outline" data-msg="أضيفي ملفات التقارير هنا ليتم ربطها بالواجهة.">استعراض</button></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" id="library">
+    <div class="section-title"><div><span class="eyebrow dark">المعرفة والأدلة</span><h2>المكتبة الرقمية</h2></div></div>
+    <div class="library">
+      <button data-msg="قسم الأدلة الإرشادية — جاهز لإضافة ملفات PDF.">📘 الأدلة الإرشادية</button>
+      <button data-msg="قسم النشرات — جاهز لإضافة النشرات.">📰 النشرات</button>
+      <button data-msg="قسم المنهجيات — جاهز لإضافة الأدوات والمنهجيات.">🧭 الأدوات والمنهجيات</button>
+      <button data-msg="قسم النماذج — جاهز لربط النماذج الإلكترونية.">📝 النماذج الإلكترونية</button>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container contact-box">
+      <div><span class="eyebrow">تواصل</span><h2>هل لديك مقترح أو استفسار؟</h2><p>استخدم النموذج لإرسال رسالة تجريبية. يمكن ربطه لاحقًا ببريد أو خدمة نماذج.</p></div>
+      <form id="contactForm">
+        <input required name="name" placeholder="الاسم">
+        <input required type="email" name="email" placeholder="البريد الإلكتروني">
+        <textarea required name="message" rows="4" placeholder="الرسالة"></textarea>
+        <button class="btn primary" type="submit">إرسال الرسالة</button>
+        <div id="formMsg" class="form-msg" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <div><b>نافذة غرفة حالة التعليم والتدريب</b><small>إدارة التعليم بمحافظة الأحساء</small></div>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
