@@ -9,3 +9,13 @@
 .content{padding:70px 0 20px}.content h2{font-size:30px;color:var(--gold2);margin:0 0 20px}.content-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.content-grid button{min-height:90px;text-align:right;background:#061a2c;border:1px solid rgba(31,181,236,.25);color:#fff;border-radius:16px;padding:18px;font-family:inherit;font-weight:700;cursor:pointer;transition:.25s}.content-grid button:hover{border-color:var(--gold);transform:translateY(-3px)}.content-grid span{display:block;color:var(--gold);font-size:12px;margin-top:12px}.muted{color:var(--muted);line-height:2}
 footer{margin-top:60px;padding:28px 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted)}footer .container{display:flex;justify-content:space-between}footer b{color:#e9eef2}.toast{position:fixed;bottom:22px;right:22px;background:#081d30;border:1px solid var(--gold);color:#fff;padding:14px 18px;border-radius:12px;opacity:0;transform:translateY(15px);transition:.25s;z-index:50}.toast.show{opacity:1;transform:translateY(0)}
 @keyframes screenFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}@keyframes logoPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}@keyframes scan{0%{top:8%;opacity:0}10%{opacity:1}90%{opacity:1}100%{top:92%;opacity:0}}@keyframes particle{0%,100%{transform:translateY(0);opacity:.25}50%{transform:translateY(-20px);opacity:1}}@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,-25px)}}@keyframes gridMove{to{background-position:0 70px,70px 0}}@keyframes ticker{to{transform:translateX(50%)}}@media(max-width:950px){.top-inner{flex-wrap:wrap}.brand{order:2}nav{order:4;width:100%;display:none;flex-direction:column;gap:0;background:#03101c;border-top:1px solid rgba(255,255,255,.08)}nav.open{display:flex}nav a{padding:14px}.menu-btn{display:block;order:3}.shortcuts{order:1}.hero h1{font-size:40px}.quick-grid{grid-template-columns:repeat(2,1fr)}.metrics{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.brand small{display:none}.shortcuts a{width:38px;height:38px}.hero{padding-top:35px}.hero h1{font-size:31px}.hero-sub{font-size:16px}.dashboard-wrap{width:98%}.room-logo{width:72%}.quick-grid,.content-grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.ticker-title{padding:0 10px;font-size:12px}.ticker{height:48px}footer .container{flex-direction:column;gap:10px}}
+.white-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-logo .main-logo {
+  display: block;
+  margin: 0 auto;
+}
