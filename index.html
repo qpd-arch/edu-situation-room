@@ -1,113 +1,120 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>نافذة غرفة حالة التعليم والتدريب</title>
-  <meta name="description" content="نافذة غرفة حالة التعليم والتدريب بإدارة التعليم بمحافظة الأحساء">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>غرفة حالة التعليم والتدريب</title>
+<meta name="description" content="غرفة حالة التعليم والتدريب بإدارة التعليم بمحافظة الأحساء">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="#home" aria-label="الرئيسية">
-      <span class="brand-mark">ن</span>
-      <span><b>نافذة غرفة حالة</b><small>التعليم والتدريب</small></span>
+<header class="topbar">
+  <div class="top-inner">
+    <a class="brand" href="#home">
+      <span class="brand-mini">ن</span>
+      <span><b>غرفة حالة التعليم والتدريب</b><small>إدارة التعليم بمحافظة الأحساء</small></span>
     </a>
-    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <button class="menu-btn" id="menuBtn">☰</button>
     <nav id="mainNav">
-      <a href="#home">الرئيسية</a>
-      <a href="#indicators">المؤشرات</a>
+      <a class="active" href="#home">الرئيسية</a>
       <a href="#reports">التقارير</a>
-      <a href="#library">المكتبة الرقمية</a>
-      <a href="#contact">تواصل معنا</a>
+      <a href="#bulletins">النشرات والإعلانات</a>
+      <a href="#meetings">اللقاءات والاجتماعات</a>
+      <a href="#analysis">غرفة تحليل البيانات</a>
     </nav>
+    <div class="shortcuts">
+      <a href="#notifications" title="التنبيهات">♧<i>3</i></a>
+      <a href="#analysis" title="غرفة تحليل البيانات">⌕</a>
+      <a href="#indicators" title="لوحة المؤشرات">◔</a>
+    </div>
   </div>
 </header>
 
 <main id="home">
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">إدارة التعليم بمحافظة الأحساء</span>
-        <h1>من البيانات إلى الرؤية<br><em>ومن الرؤية إلى القرار</em></h1>
-        <p>منصة معرفية تفاعلية لعرض المؤشرات والنتائج والتقارير والأدلة الداعمة للقرارات التطويرية.</p>
-        <div class="actions">
-          <a class="btn primary" href="#indicators">استكشف المؤشرات</a>
-          <a class="btn secondary" href="#reports">استعرض التقارير</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="pulse"><span></span> حالة المنصة</div>
-        <strong>لوحة الإنجاز</strong>
-        <div class="big-number">86%</div>
-        <div class="progress"><i style="width:86%"></i></div>
-        <div class="mini-grid">
-          <div><b>24</b><small>مؤشر</small></div>
-          <div><b>12</b><small>تقرير</small></div>
-          <div><b>08</b><small>مجالات</small></div>
+<section class="hero">
+  <div class="hero-glow glow1"></div><div class="hero-glow glow2"></div>
+  <div class="data-lines"></div>
+  <div class="container">
+    <div class="hero-kicker">إدارة التعليم بمحافظة الأحساء</div>
+    <h1>غرفة حالة التعليم والتدريب</h1>
+    <p class="hero-sub">من البيانات إلى الرؤية... ومن الرؤية إلى القرار</p>
+    <div class="dashboard-wrap">
+      <div class="dashboard-screen">
+        <div class="scan"></div>
+        <div class="screen-content">
+          <img class="room-logo" src="logo-room.jpeg" alt="شعار غرفة حالة التعليم والتدريب">
+          <div class="screen-particle p1"></div><div class="screen-particle p2"></div>
+          <div class="screen-particle p3"></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="container section" id="indicators">
-    <div class="section-title">
-      <div><span class="eyebrow dark">لوحة المتابعة</span><h2>المؤشرات التعليمية</h2></div>
-      <input id="searchInput" class="search" placeholder="ابحث عن مؤشر..." aria-label="البحث عن مؤشر">
-    </div>
-    <div class="cards" id="indicatorCards">
-      <button class="card" data-search="نتائج نافس الأداء التحصيل"><span class="icon">◈</span><b>نتائج نافس</b><small>تحليل الأداء والفجوات التعليمية</small><strong>78%</strong></button>
-      <button class="card" data-search="التحصيل الدراسي نتائج الطلاب"><span class="icon">▦</span><b>التحصيل الدراسي</b><small>متابعة مستويات التحصيل والإنجاز</small><strong>84%</strong></button>
-      <button class="card" data-search="جودة التعليم المدرسة"><span class="icon">◇</span><b>جودة التعليم</b><small>مؤشرات الجودة والتحسين المستمر</small><strong>91%</strong></button>
-      <button class="card" data-search="التدريب التطوير المهني"><span class="icon">✦</span><b>التدريب والتطوير</b><small>مؤشرات التطوير المهني والأثر</small><strong>82%</strong></button>
-    </div>
-    <p id="emptyState" class="empty" hidden>لا توجد نتائج مطابقة.</p>
-  </section>
+<section class="quick-grid container" id="analysis">
+  <a class="feature" href="#analysis-details"><span class="ficon">▥</span><div><b>تحليل البيانات</b><small>تحليلات متقدمة ورؤى تفصيلية لدعم القرار.</small></div><em>←</em></a>
+  <a class="feature" href="#indicators"><span class="ficon">⌁</span><div><b>مؤشرات الأداء</b><small>متابعة المؤشرات وقياس الأداء بصورة لحظية.</small></div><em>←</em></a>
+  <a class="feature" href="#data"><span class="ficon">◎</span><div><b>مصادر البيانات</b><small>تكامل منظم وموثوق للمصادر والملفات.</small></div><em>←</em></a>
+  <a class="feature" href="#meetings"><span class="ficon">♧</span><div><b>اللقاءات</b><small>اجتماعات فعالة وقرارات موثقة.</small></div><em>←</em></a>
+  <a class="feature" href="#notifications" id="notifications"><span class="ficon">♧</span><div><b>التنبيهات</b><small>تنبيهات مهمة للمستجدات والتحديثات.</small></div><em>←</em></a>
+  <a class="feature" href="#goals"><span class="ficon">◎</span><div><b>إدارة الأهداف</b><small>خطط استراتيجية وأهداف ذكية قابلة للمتابعة.</small></div><em>←</em></a>
+</section>
 
-  <section class="section alt" id="reports">
-    <div class="container">
-      <div class="section-title"><div><span class="eyebrow dark">معرفة قابلة للاستخدام</span><h2>التقارير والتحليلات</h2></div></div>
-      <div class="report-grid">
-        <article class="report"><span>01</span><h3>تحليل نتائج نافس</h3><p>قراءة مختصرة للنتائج ونقاط القوة والفجوات وفرص التحسين.</p><button class="outline" data-msg="سيتم ربط هذا الزر بملف التقرير عند رفعه.">عرض التقرير</button></article>
-        <article class="report"><span>02</span><h3>لوحة الإنجاز</h3><p>متابعة الإنجاز بصورة رقمية واضحة تساعد على سرعة القراءة.</p><button class="outline" data-msg="لوحة الإنجاز جاهزة للربط بالبيانات الفعلية.">فتح اللوحة</button></article>
-        <article class="report"><span>03</span><h3>التقارير الدورية</h3><p>مساحة مخصصة للتقارير والنشرات التحليلية المعتمدة.</p><button class="outline" data-msg="أضيفي ملفات التقارير هنا ليتم ربطها بالواجهة.">استعراض</button></article>
-      </div>
-    </div>
-  </section>
+<section class="metrics container" id="indicators">
+  <a href="#reports"><b data-count="24">0</b><span>التقارير</span><small>تقرير</small></a>
+  <a href="#data"><b data-count="156">0</b><span>ملفات البيانات</span><small>ملف</small></a>
+  <a href="#bulletins"><b data-count="18">0</b><span>النشرات والإعلانات</span><small>نشـرة</small></a>
+  <a href="#meetings"><b data-count="32">0</b><span>اللقاءات والاجتماعات</span><small>لقاء</small></a>
+</section>
 
-  <section class="container section" id="library">
-    <div class="section-title"><div><span class="eyebrow dark">المعرفة والأدلة</span><h2>المكتبة الرقمية</h2></div></div>
-    <div class="library">
-      <button data-msg="قسم الأدلة الإرشادية — جاهز لإضافة ملفات PDF.">📘 الأدلة الإرشادية</button>
-      <button data-msg="قسم النشرات — جاهز لإضافة النشرات.">📰 النشرات</button>
-      <button data-msg="قسم المنهجيات — جاهز لإضافة الأدوات والمنهجيات.">🧭 الأدوات والمنهجيات</button>
-      <button data-msg="قسم النماذج — جاهز لربط النماذج الإلكترونية.">📝 النماذج الإلكترونية</button>
-    </div>
-  </section>
+<section class="ticker" id="bulletins">
+  <div class="ticker-title">منجزات الغرفة</div>
+  <div class="ticker-window"><div class="ticker-track">
+    <span>تحليل البيانات وتحويلها إلى رؤى داعمة للقرار</span><b>•</b>
+    <span>مؤشرات أداء تسهم في قراءة الواقع التعليمي</span><b>•</b>
+    <span>تقارير وتحليلات تدعم فرص التحسين والتطوير</span><b>•</b>
+    <span>منجزات نوعية تعكس أثر غرفة حالة التعليم والتدريب</span><b>•</b>
+    <span>معرفة أدق... قرار أسرع... أثر مستدام</span><b>•</b>
+  </div></div>
+  <button id="tickerPause" aria-label="إيقاف الشريط">Ⅱ</button>
+</section>
 
-  <section class="section contact" id="contact">
-    <div class="container contact-box">
-      <div><span class="eyebrow">تواصل</span><h2>هل لديك مقترح أو استفسار؟</h2><p>استخدم النموذج لإرسال رسالة تجريبية. يمكن ربطه لاحقًا ببريد أو خدمة نماذج.</p></div>
-      <form id="contactForm">
-        <input required name="name" placeholder="الاسم">
-        <input required type="email" name="email" placeholder="البريد الإلكتروني">
-        <textarea required name="message" rows="4" placeholder="الرسالة"></textarea>
-        <button class="btn primary" type="submit">إرسال الرسالة</button>
-        <div id="formMsg" class="form-msg" aria-live="polite"></div>
-      </form>
-    </div>
-  </section>
+<section class="content container" id="reports">
+  <h2>التقارير</h2>
+  <div class="content-grid">
+    <button data-msg="سيتم فتح ملف التقرير عند ربطه">تحليل نتائج نافس <span>عرض التقرير ←</span></button>
+    <button data-msg="يمكن إضافة التقرير وتحديث رابطه لاحقًا">لوحة الإنجاز <span>فتح اللوحة ←</span></button>
+    <button data-msg="مساحة جاهزة للتقارير الدورية">التقارير الدورية <span>استعراض ←</span></button>
+  </div>
+</section>
+
+<section class="content container" id="meetings">
+  <h2>اللقاءات والاجتماعات</h2>
+  <div class="content-grid">
+    <button data-msg="أضيفي رابط اللقاء أو ملفه وسيظهر هنا">اللقاءات التعريفية <span>التفاصيل ←</span></button>
+    <button data-msg="قسم جاهز لإضافة محاضر الاجتماعات">الاجتماعات الدورية <span>التفاصيل ←</span></button>
+  </div>
+</section>
+
+<section class="content container" id="data">
+  <h2>مصادر البيانات</h2>
+  <div class="content-grid">
+    <button data-msg="يمكن ربط ملفات Excel أو روابط المصادر هنا">ملفات البيانات <span>فتح الملفات ←</span></button>
+    <button data-msg="قسم جاهز لإضافة مصدر بيانات جديد">مصادر موثوقة <span>استعراض ←</span></button>
+  </div>
+</section>
+
+<section class="content container" id="goals">
+  <h2>إدارة الأهداف</h2><p class="muted">خطط استراتيجية وأهداف قابلة للمتابعة والقياس.</p>
+</section>
+
+<section class="content container" id="analysis-details">
+  <h2>غرفة تحليل البيانات</h2><p class="muted">مساحة جاهزة لاحقًا لإضافة لوحات التحليل والرسوم والمؤشرات الفعلية.</p>
+</section>
 </main>
 
-<footer>
-  <div class="container footer">
-    <div><b>نافذة غرفة حالة التعليم والتدريب</b><small>إدارة التعليم بمحافظة الأحساء</small></div>
-    <span>© 2026</span>
-  </div>
-</footer>
-
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<footer><div class="container"><b>غرفة حالة التعليم والتدريب</b><span>© 2026 إدارة التعليم بمحافظة الأحساء</span></div></footer>
+<div id="toast" class="toast"></div>
 <script src="script.js"></script>
 </body>
 </html>
